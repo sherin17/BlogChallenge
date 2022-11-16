@@ -31,7 +31,9 @@ app.get('/api/bloggerlist',(req,res)=>{
 
 var port = process.env.PORT || 3000;
 // Server code 
-
+app.listen(3000,()=>{
+    console.log('server is connected')
+})
 
 const path=require('path');
 app.use(express.static(path.join(__dirname+'/dist/blog-website')));
