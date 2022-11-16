@@ -31,8 +31,8 @@ app.get('/api/bloggerlist',(req,res)=>{
 
 var port = process.env.PORT || 3000;
 // Server code 
-app.listen(3000,()=>{
-    console.log('server is connected')
+app.listen(port,()=>{
+    console.log(`server is connected to ${port}`)
 })
 
 const path=require('path');
